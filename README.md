@@ -1,6 +1,6 @@
 # nn_project_streamlit_app
 
-## Чтобы классифицировать изображения, перейдите по [ссылке](https://app-8sqnozvhqo7zg4kygb74tm.streamlit.app/)
+## Чтобы классифицировать изображения, перейдите по [ссылке](https://nnprojectappapp-qpchksprbxet6mkbgb8eac.streamlit.app/)
 
 ### Команда: Анастасия Можайская, Тигран Арутюнян
 
