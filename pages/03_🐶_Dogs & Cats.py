@@ -8,6 +8,7 @@ from torchvision import io
 from model.preprocessing import preprocess
 import numpy as np
 import requests
+import time
 from io import BytesIO
 
 device="cpu" 
@@ -42,6 +43,7 @@ def predict(img):
 
 
 selected = st.radio('Способ загрузки', ['файл', 'ссылка URL'])
+start_time = time.time()
 
 if selected == 'файл':
     uploaded_files = st.file_uploader("Загрузите изображения", accept_multiple_files=True)
@@ -53,6 +55,7 @@ if selected == 'файл':
             st.image(resized_image)
             st.write(f"<h2 style='font-size: 16px;'>Предсказанный класс: \
                             <span style='color:royalblue; font-size:17px'>{prediction}</span></h2>", unsafe_allow_html=True)
+            st.subheader(f'Время предсказания: {round((time.time() - start_time), 2)} сек.')
 else:
     image_urls = st.text_area('Введите URL-ы фотографий (разделяйте их новой строкой)')
     if image_urls:
@@ -66,6 +69,7 @@ else:
                 st.image(resized_image)
                 st.write(f"<h2 style='font-size: 16px;'>Предсказанный класс: \
                             <span style='color:royalblue; font-size:17px'>{prediction}</span></h2>", unsafe_allow_html=True)
+                st.subheader(f'Время предсказания: {round((time.time() - start_time), 2)} сек.')
             
             else:
                 st.write(f"Неправильный формат изображения: {url}. Пожалуйста, введите URL изображения с расширением .jpg, .jpeg или .png.")
