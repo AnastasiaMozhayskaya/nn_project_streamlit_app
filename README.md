@@ -1,6 +1,6 @@
 # nn_project_streamlit_app
 
-## Чтобы классифицировать изображения, перейдите по ссылке [Streamlit](https://nnprojectappapp-qpchksprbxet6mkbgb8eac.streamlit.app/)
+## Чтобы воспользоваться нашим приложением, перейдите по ссылке [Streamlit](https://nnprojectappapp-qpchksprbxet6mkbgb8eac.streamlit.app/)
 
 ### Команда: Анастасия, [Тигран](https://github.com/SoloYolo7)
 
